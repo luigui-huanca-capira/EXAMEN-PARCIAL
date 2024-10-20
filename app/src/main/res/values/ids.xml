@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_start" type="id" />
+    <item name="tv_description" type="id" />
+    <item name="tv_welcome" type="id" />
+    <item name="rb_option3" type="id" />
+    <item name="rb_option2" type="id" />
+    <item name="rb_option1" type="id" />
+    <item name="rg_options" type="id" />
+    <item name="rb_option4" type="id" />
+    <item name="btn_submit" type="id" />
+    <item name="tv_question" type="id" />
+    <item name="progressBar" type="id" />
+</resources>

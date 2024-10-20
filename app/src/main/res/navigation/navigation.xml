@@ -1,0 +1,48 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.luiguialexanderparcial.WelcomeFragment"
+        tools:layout="@layout/welcome_fragment">
+        <action
+            android:id="@+id/action_welcomeFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.example.luiguialexanderparcial.QuestionFragment"
+        tools:layout="@layout/question_fragment">
+        <action
+            android:id="@+id/action_questionFragment_to_answerFragment"
+            app:destination="@id/answerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/answerFragment"
+        android:name="com.example.luiguialexanderparcial.AnswerFragment"
+        tools:layout="@layout/answer_fragment">
+        <action
+            android:id="@+id/action_answerFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+        <action
+            android:id="@+id/action_answerFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.example.quizgame.ResultsFragment"
+        tools:layout="@layout/fragment_results">
+
+        <!-- Acción de navegación hacia WelcomeFragment -->
+        <action
+            android:id="@+id/action_resultsFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+
+    </fragment>
+
+</navigation>
